@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подбор обучающих курсов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Курсомания</a>
+      <ul>
+        <li><a href="/glavnaya.html">Главная</a></li>
+        <li><a href="/posik.html">Поиск</a></li>
+        <li><a href="/zaglushka.html">О нас</a></li>
+        <li><a href="/zaglushka.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Подберите для себя лучший курс!</h1>
+    <form action="get_course">
+      <label for="city_list">Город:</label> 
+        <select id="city_list">
+            <option value="Александров">Александров</option>
+            <option value="Владимир">Владимир</option>
+            <option value="Вязники">Вязники</option>
+            <option value="Гороховец">Гороховец</option>
+            <option value="Ковров">Ковров</option>
+            <option value="Суздаль">Суздаль</option>
+        </select>
+      <label for="learning-format">Форма обучения:</label>
+      <select id="learning-format" name="learning-format">
+        <option value="online">Очная</option>
+        <option value="offline">Заочная</option>
+        <option value="on-offline">Очно-заочная</option>
+      </select>
+    <label for="group">Месяц начала обучения:</label>
+    
+    <input type="month" name="yourmonth">
+
+      <label for="group">Набор в группу:</label>
+      <input type="radio" id="group" name="group" value="yes">
+      <label for="group-yes">Да</label>
+      <input type="radio" id="group" name="group" value="no">
+      <label for="group-no">Нет</label>
+
+      <label for="rating">Минимальный рейтинг:</label>
+      <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+
+      <label for="age">Минимальный возраст:</label>
+      <input type="number" id="age" name="age" min="5" max="18">
+
+      <label for="ovz">Адаптация под ОВЗ:</label>
+      <input type="checkbox" id="ovz" name="ovz">
+      <p></p>
+      <button class="btn" type="submit">Найти курс</button>
+    </form>
+
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Подбор обучающих курсов</p>
+  </footer>
+</body>
+</html>
